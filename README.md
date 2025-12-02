@@ -8,12 +8,13 @@ GradeScraper is a tool to collate raw marks from Blackboard into a tabulated ter
 # Setting up GradeScraper
 ## Dependencies
 ### 0️⃣ For absolute beginners to coding
-Download Python: https://www.python.org/downloads/
+Download Python: https://www.python.org/downloads/  
 Download VSCode: https://code.visualstudio.com/download
 (or any other suitable IDE)
 ### 1️⃣ Get cookies,txt LOCALLY Chrome Extension
 Download this Chrome extension: https://chromewebstore.google.com/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc  
 You will use this to export a cookies file to your local machine.  
+If you are not using Chrome, you will need to find a way to export a cookies.txt file in a JSON format.
 ### 2️⃣ pip packages
 Install the _requests_ and _tabulate_ packages with pip package manager as follows:  
   > pip install requests tabulate 
@@ -25,3 +26,17 @@ Clone the repository to get the code on your local machine. If you are not famil
 
 Alternatively, you can download the zip folder by going to the green "Code" button on the main repository page.
 
+## You are now fully set up and ready to start using GradeScraper!  
+
+# Using GradeScraper
+## Exporting cookies.txt
+Log onto the Blackboard website. With the page open, find the Get cookies.txt LOCALLY extension and click the first option, **Export**  
+Save the cookies.txt file to the same folder as the code. ⚠️ **If you do not do this, you will run into errors!**
+
+Note that cookies.txt files expire after 1-2 hours, so you will likely need to re-export from the Blackboard page each time you want to run the program.
+
+## Running the code
+Open the code in your IDE (e.g. VSCode). Run the code (in VSCode, Run > Run Without Debugging, and select Python Debugger at the top if prompted).
+
+## Results
+Your table of marks should be visible in the terminal at the bottom.
