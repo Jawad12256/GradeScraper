@@ -14,7 +14,7 @@ Download VSCode: https://code.visualstudio.com/download
 ### 1️⃣ Get cookies,txt LOCALLY Chrome Extension
 Download this Chrome extension: https://chromewebstore.google.com/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc  
 You will use this to export a cookies file to your local machine.  
-If you are not using Chrome, you will need to find a way to export a cookies.txt file in a JSON format.
+If you are not using Chrome, you will need to find a way to export a cookies.txt file in a NetScape format.
 ### 2️⃣ pip packages
 Install the _requests_ and _tabulate_ packages with pip package manager as follows:  
   > pip install requests tabulate 
@@ -39,4 +39,34 @@ Note that cookies.txt files expire after 1-2 hours, so you will likely need to r
 Open the code in your IDE (e.g. VSCode). Run the code (in VSCode, Run > Run Without Debugging, and select Python Debugger at the top if prompted).
 
 ## Results
-Your table of marks should be visible in the terminal at the bottom.
+Your table of marks should be visible in the terminal at the bottom. It is also exported to a CSV file, _marks.csv_, in the same directory as the code.  
+You may also notice a _user_id.txt_ file appearing in your directory: this just helps the code skip a few steps the next time you run it. If for whatever reason it gets modified or you have issues with it, simply delete this file in your local directory. It will be refreshed the next time you run the code.
+
+# Troubleshooting
+
+### ❌ Error: `API Error 401 – API request is not authenticated`
+Your cookies have expired.  
+**Solution:** Re-export a fresh `cookies.txt` from Blackboard.
+
+---
+
+### ❌ Course shows “PRIVATE”
+This means the course is unavailable or archived on Blackboard.  
+This is normal — the script cannot access private courses.
+
+---
+
+### ❌ Score shows “0.0” but should be a real number  
+Some Blackboard responses include irrelevant `0` scores.  
+The script filters and selects the most reasonable value, usually between 0 and 100.
+
+---
+
+### ❌ Path or file not found  
+Ensure the following files are in the **same folder**:
+
+- `GradeScraper.py`
+- `cookies.txt`
+- (After first run) `user_id.txt`
+
+---
