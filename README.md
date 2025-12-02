@@ -15,10 +15,8 @@ Download VSCode: https://code.visualstudio.com/download
 Download this Chrome extension: https://chromewebstore.google.com/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc  
 You will use this to export a cookies file to your local machine.  
 ### 2️⃣ pip packages
-Install the _requests_ and _tabulate_ packages with pip package manager as follows:
-'''
-pip install requests tabulate
-'''
+Install the _requests_ and _tabulate_ packages with pip package manager as follows:  
+  > pip install requests tabulate
 **If you are not familiar with pip**, please see the instructions here to install pip: https://pypi.org/project/pip/
 
 ## Getting the code on your local machine
