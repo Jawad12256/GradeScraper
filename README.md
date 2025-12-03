@@ -11,7 +11,7 @@ GradeScraper is a tool to collate raw marks from Blackboard into a tabulated ter
 Download Python: https://www.python.org/downloads/  
 Download VSCode: https://code.visualstudio.com/download
 (or any other suitable IDE)
-### 1️⃣ Get cookies,txt LOCALLY Chrome Extension
+### 1️⃣ Get cookies.txt LOCALLY Chrome Extension
 Download this Chrome extension: https://chromewebstore.google.com/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc  
 You will use this to export a cookies file to your local machine.  
 If you are not using Chrome, you will need to find a way to export a cookies.txt file in a NetScape format.
